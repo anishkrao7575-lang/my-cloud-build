@@ -15,3 +15,4 @@ RUN pip install -r requirements.txt
 # to be equal to the cores available.
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app
 
+
